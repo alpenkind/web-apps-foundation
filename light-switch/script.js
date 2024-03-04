@@ -3,7 +3,6 @@
 const main = document.querySelector("main");
 const title = document.querySelector("title");
 const button = document.querySelector("button");
-//let newTitle = " ";
 
 //Function which is triggerd by the click-event for button changes.
 function clickButton() {
