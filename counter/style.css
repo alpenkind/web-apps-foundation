@@ -1,0 +1,66 @@
+/*General Stylings*/
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 20 px;
+  font-family: "Courier New", Courier, monospace;
+  height: 100vh;
+  margin: 0;
+  --first-color: white;
+  --second-color: gold;
+  --width: 0;
+}
+
+/*Specific Stylings*/
+header {
+  background-color: gold;
+  display: flex;
+  justify-content: space-between;
+}
+main {
+  --width: 0;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(
+    to right,
+    var(--second-color) calc(var(--width) * 1%),
+    var(--first-color) calc(var(--width) * 1%)
+  );
+}
+
+body {
+  display: grid;
+  grid-template-rows: auto 1fr;
+}
+
+.heading {
+  display: inline-block;
+  width: 60rem;
+  margin: 2rem;
+}
+
+.button {
+  width: 7rem;
+  height: 4rem;
+  font-size: 2rem;
+  font-weight: 400;
+  border: 0.2rem solid black;
+  background-color: var(--first-color);
+  box-shadow: 5px 5px 0px -1px var(--first-color);
+  align-self: center;
+  margin: 2rem;
+}
+
+.background {
+  inset: 0;
+  z-index: -1;
+}
+
+.number {
+  font-size: 20rem;
+  margin: 3rem;
+}
